@@ -1,10 +1,18 @@
 +++
 title = "利用 emacs + hugo 搭建个人博客"
-lastmod = 2024-02-19T11:40:07+08:00
+date = 2024-02-19T12:19:00+08:00
+lastmod = 2024-02-19T19:35:26+08:00
 tags = ["emacs", "hugo"]
 categories = ["technolgic"]
 draft = false
 +++
+
+## Summary {#summary}
+
+基于 emacs , ox-hugo , 集成 github pages , 搭建 blog
+
+<!--more-->
+
 
 ## 基础环境准备 {#基础环境准备}
 
@@ -34,9 +42,8 @@ git init
 
 默认的 site 的目录结构如下
 
-<style>.org-center { margin-left: auto; margin-right: auto; text-align: center; }</style>
-
-<div class="org-center">
+<details>
+<div class="details">
 
 ├── archetypes
 │   └── default.md
@@ -48,8 +55,8 @@ git init
 ├── layouts
 ├── static
 └── themes
-
 </div>
+</details>
 
 安装一个基本的 theme
 
@@ -58,9 +65,8 @@ git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git theme
 echo "theme = 'ananke'" >> hugo.toml"
 ```
 
-<style>.org-center { margin-left: auto; margin-right: auto; text-align: center; }</style>
-
-<div class="org-center">
+<details>
+<div class="details">
 
 hugo server
 Watching for changes in /Users/zhangyang/github/my-blog/{archetypes,assets,content,data,i18n,layouts,static,themes}
@@ -88,8 +94,8 @@ Serving pages from memory
 Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
 Web Server is available at <http://localhost:1313/> (bind address 127.0.0.1)
 Press Ctrl+C to stop
-
 </div>
+</details>
 
 `hugo` 的基本环境搭建完成，访问 `http://localhost:1313` 查看一下效果
 
@@ -134,7 +140,7 @@ ox-hugo 有支持以下两种工作流
     -   通过 org 的 subtree 来导出单独的文章
     -   循环导出整个 subtree
 2.  一个 org 文件一篇文章的工作流
-    -   这样操作，就没法很好的利用 org 的标签，以及属性继承等特性，可以利用 `TODO` 关键字来标识草稿状态
+    -   这样操作，就没法很好的利用 org 的标签，以及属性继承等特性，可以利用  关键字来标识草稿状态
 
 <!--listend-->
 
@@ -178,28 +184,27 @@ ox-hugo 有支持以下两种工作流
 然后利用 :PROPERTIES: , 单独配置文章的 HUGO_SECTION 以及 EXPORT_FILE_NAME 等属性即可完成博客的编写
 
 
-### all-post 结构 {#all-post-结构}
+### all-post 的实际结构如下 {#all-post-的实际结构如下}
 
-\#+begin_details
+```org
+#+hugo_base_dir: path-to-hugo
+#+hugo_auto_set_lastmod: t
 
+* INBOX
 
-#### INBOX {#inbox}
+** TODO POST1 IDEA
+:PROPERTIES:
+:EXPORT_FILE_NAME: export file
+:END:
+** TODO POST2 IDEA
 
-<!--list-separator-->
+* DONE FINISHED POST :@category:tag1:tag2:
 
-- <span class="org-todo todo TODO">TODO</span>  POST1 IDEA
-
-<!--list-separator-->
-
-- <span class="org-todo todo TODO">TODO</span>  POST2 IDEA
-
-
-#### <span class="org-todo done DONE">DONE</span> FINISHED POST <span class="tag"><span class="_category">@category</span><span class="tag1">tag1</span><span class="tag2">tag2</span></span> {#finished-post}
-
-
-#### <span class="org-todo done DONE">DONE</span> FINISHED POST2 <span class="tag"><span class="_category">@category</span><span class="tag1">tag1</span><span class="tag2">tag2</span></span> {#利用 emacs + hugo 搭建个人博客}
-
-\#+end_details
+* DONE FINISHED POST2 :@category:tag1:tag2:
+:PROPERTIES:
+:EXPORT_FILE_NAME: 利用 emacs + hugo 搭建个人博客
+:END:
+```
 
 
 ## hugo 配置美化 {#hugo-配置美化}
@@ -284,16 +289,16 @@ theme = 'LoveIt'
 
 1.  在仓库的 **Settings -&gt; Pages** 里修改 Build and Deployment 的 **Source** 修改为 GitHub Actions
 
-{{< figure src="/Users/zhangyang/Library/Mobile Documents/iCloud~com~logseq~logseq/Documents/_20240219_104007screenshot.png" >}}
+    {{< figure src="/c8/70562f-2b52-4960-a4e8-caefa0cfa9e7/_20240219_174337screenshot.png" >}}
 
-1.  在本地的 hugo 代码库操作
+2.  在本地的 hugo 代码库操作
     ```bash
           git remote add origin git@github.com:dreamkidd/dreamkidd.github.io.git
           git push --set-upstream origin main
           mkdir -p .github/workflows && touch .github/workflows/hugo.yaml
     ```
 
-2.  将一下内容粘贴到 \`hugo.yaml\` 中
+3.  将一下内容粘贴到 \`hugo.yaml\` 中
 
 <!--listend-->
 
@@ -384,9 +389,9 @@ jobs:
 
 2.  在 repo 的 Actions 里查看 workflow 的结果是否正常
 
-    {{< figure src="/Users/zhangyang/Library/Mobile Documents/iCloud~com~logseq~logseq/Documents/_20240219_111122screenshot.png" >}}
+{{< figure src="/c8/70562f-2b52-4960-a4e8-caefa0cfa9e7/_20240219_174300screenshot.png" >}}
 
-3.  以后每次提交，会自动进行构建发布
+1.  以后每次提交，会自动进行构建发布
 
 
 ## Reference {#reference}
