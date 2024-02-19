@@ -1,7 +1,6 @@
 +++
 title = "利用 emacs + hugo 搭建个人博客"
-author = ["Kidddddddd"]
-lastmod = 2024-02-19T11:13:39+08:00
+lastmod = 2024-02-19T11:40:07+08:00
 tags = ["emacs", "hugo"]
 categories = ["technolgic"]
 draft = false
