@@ -78,3 +78,7 @@ theme = 'PaperMod'
 
 [outputs]
     home = ["HTML","RSS"]
+
+[services]
+  [services.googleAnalytics]
+    ID = 'G-JW0HVP979H'
