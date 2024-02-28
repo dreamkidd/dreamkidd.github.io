@@ -8,9 +8,7 @@ hasCJKLanguage = true
 
 title = 'Kidddddddd 的小窝'
 
-languageCode = 'zh-CN'
 languageName = "简体中文"
-hasCJKLanguage = true
 
 theme = 'FixIt'
 
