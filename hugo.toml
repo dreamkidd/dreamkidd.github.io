@@ -1,4 +1,10 @@
-baseURL = 'https://example.org/'
+baseURL = "https://dreamkidd.github.io"
+# 设置默认的语言 ["en", "zh-cn", "fr", "pl", ...]
+defaultContentLanguage = "zh-cn"
+# 网站语言，仅在这里 CN 大写 ["en", "zh-CN", "fr", "pl", ...]
+languageCode = "zh-CN"
+# 是否包括中日韩文字
+hasCJKLanguage = true
 
 title = 'Kidddddddd 的小窝'
 
@@ -6,7 +12,7 @@ languageCode = 'zh-CN'
 languageName = "简体中文"
 hasCJKLanguage = true
 
-theme = 'PaperMod'
+theme = 'FixIt'
 
 [params]
     comments =  true
