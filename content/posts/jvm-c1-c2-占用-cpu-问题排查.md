@@ -1,7 +1,9 @@
 +++
-title = "JVM C1 C2 占用 CPU 问题排查 @technolgic:java:jvm"
+title = "JVM C1 C2 占用 CPU 问题排查"
 date = 2024-02-28T15:41:00+08:00
-lastmod = 2024-02-28T15:42:03+08:00
+lastmod = 2024-02-28T16:39:06+08:00
+tags = ["java", "jvm"]
+categories = ["technolgic"]
 draft = false
 +++
 
@@ -100,7 +102,9 @@ C2 是 JVM 用来进行 JIT 编译的线程，其过程是把 `byteCode` 编译�
 
 从现象看，应该跟 `CodeCache` 有关系，但是具体原因暂时不清楚，先跟踪一下 `CodeCache` 的情况
 
-```nil
+<details>
+<div class="details">
+
 ID    NAME                             GROUP            PRIORITY    STATE      %CPU       DELTA_TIME TIME        INTERRUPTE DAEMON
 -1    C2 CompilerThread4               -                -1          -          3.24       0.161      1:2.351     false      true
 -1    C2 CompilerThread1               -                -1          -          3.15       0.157      0:59.482    false      true
@@ -157,7 +161,8 @@ metaspace                    137M      145M      -1       94.45%
 compressed_class_space       16M       18M       1024M    1.65%
 direct                       136K      136K      -        100.00%
 mapped                       0K        0K        -        0.00%
-```
+</div>
+</details>
 
 可以观察到的现象有一下几点
 
@@ -168,7 +173,9 @@ mapped                       0K        0K        -        0.00%
 
 调整 `-XX:ReservedCodeCacheSize=1024m`
 
-```nil
+<details>
+<div class="details">
+
 ID    NAME                             GROUP            PRIORITY    STATE      %CPU       DELTA_TIME TIME        INTERRUPTE DAEMON
 311   SimplePauseDetectorThread_0      main             5           TIMED_WAIT 0.21       0.010      0:3.103     false      true
 313   SimplePauseDetectorThread_2      main             5           TIMED_WAIT 0.21       0.010      0:3.077     false      true
@@ -194,7 +201,8 @@ compressed_class_space       15M       16M       1024M    1.47%
 direct                       80K       80K       -        100.00%
 mapped                       0K        0K        -        0.00%
 Runtime
-```
+</div>
+</details>
 
 C2 的 `CPU` 显著降低 `code_cache` 维持的 63M 左右,会随着系统运行过程逐步增加
 
