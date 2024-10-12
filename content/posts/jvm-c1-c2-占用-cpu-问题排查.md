@@ -2,9 +2,9 @@
 title = "JVM C1 C2 占用 CPU 问题排查"
 author = ["Kidddddddd"]
 date = 2024-02-28T15:41:00+08:00
-lastmod = 2024-10-12T17:35:49+08:00
+lastmod = 2024-10-12T17:49:12+08:00
 tags = ["java", "jvm"]
-categories = ["technolgic"]
+categories = ["Technolgic", "technolgic"]
 draft = false
 +++
 

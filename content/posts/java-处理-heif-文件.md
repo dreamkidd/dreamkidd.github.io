@@ -1,14 +1,11 @@
 +++
 title = "Java 处理 heif 文件"
 author = ["Kidddddddd"]
-lastmod = 2024-10-12T17:38:11+08:00
+lastmod = 2024-10-12T17:49:36+08:00
 tags = ["java"]
-categories = ["technolgic"]
+categories = ["Technolgic"]
 draft = false
 +++
-
-CLOSED: <span class="timestamp-wrapper"><span class="timestamp">[2024-10-12 六 17:11]</span></span>
-
 
 ## Summary {#summary}
 
