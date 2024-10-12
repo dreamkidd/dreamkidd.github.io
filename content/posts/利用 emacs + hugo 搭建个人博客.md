@@ -1,7 +1,8 @@
 +++
 title = "利用 emacs + hugo 搭建个人博客"
+author = ["Kidddddddd"]
 date = 2024-02-19T12:19:00+08:00
-lastmod = 2024-02-19T19:35:26+08:00
+lastmod = 2024-10-12T17:35:49+08:00
 tags = ["emacs", "hugo"]
 categories = ["technolgic"]
 draft = false
@@ -175,7 +176,7 @@ ox-hugo 有支持以下两种工作流
 ```
 
 
-#### 基本的工作流 {#基本的工作流}
+### 基本的工作流 {#基本的工作流}
 
 捕获到的博客想法，利用 `capture` 记录下来，
 
@@ -207,10 +208,10 @@ ox-hugo 有支持以下两种工作流
 ```
 
 
-## hugo 配置美化 {#hugo-配置美化}
+### hugo 配置美化 {#hugo-配置美化}
 
 
-### 主题美化 {#主题美化}
+#### 主题美化 {#主题美化}
 
 主题配置，准备环境中通过 \`git sub module\` 以及配置过相应的主题了，现在来切换一个新主题，美化一下 blog 以及优化一下配置
 
@@ -273,15 +274,15 @@ theme = 'LoveIt'
 ```
 
 
-### 更多主题 {#更多主题}
+#### 更多主题 {#更多主题}
 
 [Complete List | Hugo Themes](https://themes.gohugo.io)
 
 
-## Blog 发布 {#blog-发布}
+### Blog 发布 {#blog-发布}
 
 
-### 利用 Github Pages 发布 Blog <span class="tag"><span class="ATTACH">ATTACH</span></span> {#利用-github-pages-发布-blog}
+#### 利用 Github Pages 发布 Blog <span class="tag"><span class="ATTACH">ATTACH</span></span> {#利用-github-pages-发布-blog}
 
 1.  在 github 创建一个 \`username.github.io\` 的 \`repo\`
 
@@ -289,7 +290,7 @@ theme = 'LoveIt'
 
 1.  在仓库的 **Settings -&gt; Pages** 里修改 Build and Deployment 的 **Source** 修改为 GitHub Actions
 
-    {{< figure src="/c8/70562f-2b52-4960-a4e8-caefa0cfa9e7/_20240219_174337screenshot.png" >}}
+    <_20240219_174337screenshot.png>
 
 2.  在本地的 hugo 代码库操作
     ```bash
@@ -389,18 +390,18 @@ jobs:
 
 2.  在 repo 的 Actions 里查看 workflow 的结果是否正常
 
-{{< figure src="/c8/70562f-2b52-4960-a4e8-caefa0cfa9e7/_20240219_174300screenshot.png" >}}
+<_20240219_174300screenshot.png>
 
 1.  以后每次提交，会自动进行构建发布
 
 
-## Reference {#reference}
+### Reference {#reference}
 
 
-### [The world’s fastest framework for building websites | Hugo](https://gohugo.io) {#the-world-s-fastest-framework-for-building-websites-hugo}
+#### [The world’s fastest framework for building websites | Hugo](https://gohugo.io) {#the-world-s-fastest-framework-for-building-websites-hugo}
 
 
-### [ox-hugo - Org to Hugo exporter](https://ox-hugo.scripter.co) {#ox-hugo-org-to-hugo-exporter}
+#### [ox-hugo - Org to Hugo exporter](https://ox-hugo.scripter.co) {#ox-hugo-org-to-hugo-exporter}
 
 
-### [GitHub - dillonzq/LoveIt: ❤️A clean, elegant but advanced blog theme for Hugo...](https://github.com/dillonzq/LoveIt) {#github-dillonzq-loveit-️a-clean-elegant-but-advanced-blog-theme-for-hugo-dot-dot-dot}
+#### [GitHub - dillonzq/LoveIt: ❤️A clean, elegant but advanced blog theme for Hugo...](https://github.com/dillonzq/LoveIt) {#github-dillonzq-loveit-️a-clean-elegant-but-advanced-blog-theme-for-hugo-dot-dot-dot}

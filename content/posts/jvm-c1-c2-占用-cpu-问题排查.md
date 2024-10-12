@@ -1,7 +1,8 @@
 +++
 title = "JVM C1 C2 占用 CPU 问题排查"
+author = ["Kidddddddd"]
 date = 2024-02-28T15:41:00+08:00
-lastmod = 2024-02-28T16:39:06+08:00
+lastmod = 2024-10-12T17:35:49+08:00
 tags = ["java", "jvm"]
 categories = ["technolgic"]
 draft = false
@@ -29,7 +30,7 @@ draft = false
 
 先用 `top -Hp pid` 查看线程信息
 
-{{< figure src="/51/41c5d6-ae06-420f-8288-9ad5ad31a8c0/_20240227_194922screenshot.png" >}}
+<_20240227_194922screenshot.png>
 
 ```bash
 > printf "%x\n" 72
