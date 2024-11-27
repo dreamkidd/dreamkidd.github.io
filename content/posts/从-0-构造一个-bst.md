@@ -1,9 +1,9 @@
 +++
 title = "从 0 构造一个 BST"
 author = ["Kidddddddd"]
-lastmod = 2024-11-26T18:23:02+08:00
+lastmod = 2024-11-27T16:48:55+08:00
 categories = ["Algorithm"]
-draft = true
+draft = false
 +++
 
 ## Summary {#summary}
@@ -144,73 +144,334 @@ public class BstTree<K extends Comparable<K>, V> implements Bst<K, V> {
 
 ### remove 实现 {#remove-实现}
 
-remove 是 BST 实现中最复杂的逻辑，从逻辑上讲，我们首先需要递归的找到需要删除的目标 `key`  找到以后，删除这个节点就行，但是需要考虑的是，如果这个节点有子节点的情况下，我们应该怎么做
-
-<div class="HTML">
-
-&lt;div id="tree"&gt;&lt;/div&gt;
-
-&lt;script src="<https://d3js.org/d3.v5.min.js>"&gt;&lt;/script&gt;
-&lt;script&gt;
-  var treeData = {
-    "name": "1",
-    "children": [
+<div id="echarts-container" style="width: 100%; height: 600px;"></div>
+<script src="https://cdn.jsdelivr.net/npm/echarts@5.3.3/dist/echarts.min.js"></script>
+<script>
+var myChart = echarts.init(document.getElementById('echarts-container'));
+let treeData = [
+          {
+            name: '26',
+            children: [
+              {
+                name: '5',
+                children: [
+                  { name: '3', children: [{ name: 'null' } ,{name : '4'}] },
+                  {
+                    name: '22',
+                    children: [
+                      {
+                        name: '20',
+                        children: [{ name: 'null' },{name:'21'}]
+                      },
+                      {
+                        name: 'null'
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                name: '28',
+                children: [{ name: '27' }, { name: '32' }]
+              }
+            ]
+          }
+];
+myChart.setOption(
+  (option = {
+    tooltip: {
+      trigger: 'item',
+      triggerOn: 'mousemove'
+    },
+    series: [
       {
-        "name": "2",
-        "children": [
-          { "name": "4" },
-          { "name": "5" }
-        ]
-      },
-      {
-        "name": "3",
-        "children": [
-          { "name": "6" },
-          { "name": "7" }
-        ]
+        type: 'tree',
+        data: treeData,
+        left: '2%',
+        right: '2%',
+        top: '8%',
+        bottom: '20%',
+        symbol: 'circle',
+        symbolSize: 50,
+        label: {
+          position: 'inside',
+          rotate: 0,
+          verticalAlign: 'middle',
+          align: 'middle',
+          fontSize: 11
+        },
+        leaves: {
+          label: {
+            position: 'inside',
+            rotate: 0,
+            verticalAlign: 'middle',
+            align: 'middle'
+          }
+        },
+        initialTreeDepth: Infinity, // 设置树的初始展开深度为无限，展开所有节点
+        expandAndCollapse: false, // 禁用展开和折叠功能，确保所有节点默认展开
+        orient: 'TB', // 默认是纵向布局，从上到下
+        layout: 'force', // 设置布局方式为正交方式
+        nodePadding: 10, // 节点间的间距，防止节点重叠
+        emphasis: {
+          focus: 'descendant'
+        },
+        animationDurationUpdate: 750
       }
     ]
-  };
+  })
+);
+</script>
 
-var margin = { top: 20, right: 90, bottom: 30, left: 90 },
-    width = 960 - margin.left - margin.right,
-    height = 500 - margin.top - margin.bottom;
+remove 是 BST 实现中最复杂的操作，如果要删除的节点，同时拥有左右子节点的情况，光想想就会很复杂
 
-var svg = d3.select("#tree").append("svg")
-  .attr("width", width + margin.left + margin.right)
-  .attr("height", height + margin.top + margin.bottom)
-  .append("g")
-  .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+我们先来思考一个简单的特殊操作，找到树中的最大/最小值，删除树中的最大最小值
 
-var tree = d3.tree().size([height, width]);
+我们代码中只实现删除最小值的方式，如上图，我们从 `root` 出发，在左子树上遍历，在递归的过程中，我们更新左子树的指针为删除后返回的节点
 
-var root = d3.hierarchy(treeData, function(d) { return d.children; });
+1.  左子树不为空，则不是最小值，则继续遍历左子树
+2.  左子树为空，则返回右子树；右子树不为空，则父节点的左指针指向了删除节点的右子树；右子树为空，则父节点的左指针指向了null
 
-tree(root);
+<!--listend-->
 
-var link = svg.selectAll(".link")
-  .data(root.links())
-  .enter().append("path")
-  .attr("class", "link")
-  .attr("d", d3.linkVertical()
-    .x(function(d) { return d.x; })
-    .y(function(d) { return d.y; })
-  );
+```java
+    public void delMin() {
+        delMin(root);
+    }
 
-var node = svg.selectAll(".node")
-  .data(root.descendants())
-  .enter().append("g")
-  .attr("class", "node")
-  .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
+    private Node delMin(Node node) {
+        if (node.left == null) {
+            return node.right;
+        }
+        node.left = delMin(node.left);
+        node.size = size(node.left) + size(node.right) + 1;
+        return node;
+    }
+```
 
-node.append("circle")
-  .attr("r", 10);
+现在从特殊到一般情况，考虑删除任意节点
 
-  node.append("text")
-    .attr("dy", -15)
-    .attr("x", function(d) { return d.children ? -13 : 13; })
-    .style("text-anchor", function(d) { return d.children ? "end" : "start"; })
-    .text(function(d) { return d.data.name; });
-&lt;/script&gt;
+从逻辑上讲，我们首先需要递归的找到需要删除的目标 `key`
 
-</div>
+先思考一下 BST 的一个特性，就是中序遍历是有序的，如下图，中序遍历的就是 `[3,4,5,21,20,22,16,27,28,32]` ,假如我们删除 `5` ，那么 `5` 在树中的位置，需要一个元素填充过来，继续保证二叉树的有序性，很显然，这个节点放 `4,19` 是可以继续保证节点的有序性的，这俩节点分别是被删除节点的前驱节点与后继节点
+
+现在我们考虑一下如何删除
+
+1.  我们先递归的从 `root` 开始，找到删除的目标节点 `x`
+2.  我们用一个临时变量 `tmp` 来指向 `x`
+3.  将 `x.right` 指向 `delMin` 的返回值，即 **删除后所有节点大于删除节点的子二叉树**
+4.  将 `x.left` 指向 `tmp.left` ，即 **删除后所有节点小于删除节点的子二叉树**
+
+<!--listend-->
+
+```java
+    @Override
+    public void remove(K k) {
+        remove(root, k);
+    }
+
+    private Node remove(Node x, K k) {
+        final int cmp = x.k.compareTo(k);
+        if (cmp < 0) {
+            //IMPORTANT 这里是递归的设置 x 节点的 left 指针，不能直接 return
+            x.left = remove(x.left, k);
+        } else if (cmp > 0) {
+            x.right = remove(x.right, k);
+        } else {
+            //找到了 要删除的节点
+            if (x.left == null) {
+                //左子树为空，直接返回右子树 图中 删除 3 的 case
+                return x.right;
+            }
+            if (x.right == null) {
+                //右子树为空，直接返回左子树 图中删除 22 的 case
+                return x.left;
+            }
+            //左右都不为空
+            Node tmp = x;
+            x = findMin(x.right);
+            x.right = delMin(x.right);
+            x.left = tmp.left;
+        }
+        x.size = size(x.left) + size(x.right) + 1;
+        return x;
+    }
+```
+
+
+### 总结 {#总结}
+
+以上基本完成了一个 BST 的基本实现，BST 被诟病的问题是平衡性的问题，极端情况下，会退化为链表，生成上很少有实际使用，但是作为一种基础数据结构，是简单且在大部分情况下足够高效的，效率上可能比不过红黑树，但是实现复杂度上，BST 要简单很多当然使用 Java 的情况下，我们基本不太可能自己构建一个 BST ，内置的 HashMap,TreeMap 已经实现了很高效的查找表，不过还是需要理解算法的基本逻辑与做法；
+
+一个小💡
+
+BST 的问题是不平衡导致的效率退化，那么我是不是可以来定期的对 BST 进行一个异步的 rebalance ？来周期性的保证树的平衡性，保证算法效率不会退化的太过分
+
+但是很显然如果要异步处理，每次 rebalance 都需要 O(n) 的时间与空间，还需要考虑 rebalance 期间的数据读写的同步问题，这样实现的复杂度又很高了，不如找到一种更高效的平衡方式，把 rebalance 的操作均摊到每次操作中
+
+
+### 完整代码 {#完整代码}
+
+```java
+interface Bst<K extends Comparable<K>, V> {
+
+    V find(K k);
+
+    void insert(K k, V v);
+
+    void remove(K k);
+
+    int size();
+
+    void delMin();
+
+    V findMin();
+
+}
+
+public class BstTree<K extends Comparable<K>, V> implements Bst<K, V> {
+
+    private Node root;
+
+    @Override
+    public V find(K k) {
+        final Node node = find(root, k);
+        if (node != null) {
+            return node.v;
+        } else {
+            return null;
+        }
+    }
+
+    private Node find(Node n, K k) {
+        if (n == null) {
+            return null;
+        }
+        int cmp = k.compareTo(n.k);
+        if (cmp < 0) {
+            return find(n.left, k);
+        } else if (cmp > 0) {
+            return find(n.right, k);
+        } else {
+            return n;
+        }
+    }
+
+    @Override
+    public void insert(K k, V v) {
+        insert(root, k, v);
+    }
+
+    private Node insert(Node node, K k, V v) {
+        if (node == null) {
+            return new Node(k, v);
+        }
+        int cmp = k.compareTo(node.k);
+        if (cmp < 0) {
+            node.left = insert(node.left, k, v);
+        } else if (cmp > 0) {
+            node.right = insert(node.right, k, v);
+        } else {
+            node.v = v;
+        }
+        node.size = size(node.left) + size(node.right) + 1;
+        return node;
+    }
+
+    @Override
+    public void remove(K k) {
+        remove(root, k);
+    }
+
+    private Node remove(Node x, K k) {
+        final int cmp = x.k.compareTo(k);
+        if (cmp < 0) {
+            //IMPORTANT 这里是递归的设置 x 节点的 left 指针，不能直接 return
+            x.left = remove(x.left, k);
+        } else if (cmp > 0) {
+            x.right = remove(x.right, k);
+        } else {
+            //找到了 要删除的节点
+            if (x.left == null) {
+                //左子树为空，直接返回右子树 图中 删除 3 的 case
+                return x.right;
+            }
+            if (x.right == null) {
+                //右子树为空，直接返回左子树 图中删除 22 的 case
+                return x.left;
+            }
+            //左右都不为空
+            Node tmp = x;
+            x = findMin(x.right);
+            x.right = delMin(x.right);
+            x.left = tmp.left;
+        }
+        x.size = size(x.left) + size(x.right) + 1;
+        return x;
+    }
+
+    @Override
+    public int size() {
+        return size(root);
+    }
+
+    @Override
+    public void delMin() {
+        delMin(root);
+    }
+
+    private Node delMin(Node node) {
+        if (node.left == null) {
+            return node.right;
+        }
+        node.left = delMin(node.left);
+        node.size = size(node.left) + size(node.right) + 1;
+        return node;
+    }
+
+    @Override
+    public V findMin() {
+        if (root == null) {
+            return null;
+        }
+        return findMin(root).v;
+    }
+
+    public Node findMin(Node n) {
+        if (n.left == null) {
+            return n;
+        }
+        return findMin(n.left);
+    }
+
+    private int size(Node n) {
+        return n.size;
+    }
+
+    private class Node {
+        K k;
+        V v;
+        Node left;
+        Node right;
+        int size;
+
+        public Node(K k, V v) {
+            this.k = k;
+            this.v = v;
+            this.size = 1;
+        }
+    }
+}
+```
+
+
+## Reference {#reference}
+
+实现思路参考了 《算法（第四版）》中 二叉查找树 的部分，书中的相关章节讨论了很多关于 BST 效率的问题，其他章节对一些基础算法都有详细的介绍与解析，以及丰富的测试用例与习题，推荐指数：🌟🌟🌟🌟🌟
+
+这个算法的实现，可以解决下列
+
+[701. 二叉搜索树中的插入操作 - 力扣（LeetCode）](https://leetcode.cn/problems/insert-into-a-binary-search-tree/)
+[450. 删除二叉搜索树中的节点 - 力扣（LeetCode）](https://leetcode.cn/problems/delete-node-in-a-bst/)
+[669. 修剪二叉搜索树 - 力扣（LeetCode）](https://leetcode.cn/problems/trim-a-binary-search-tree/description/)
+[108. 将有序数组转换为二叉搜索树 - 力扣（LeetCode）](https://leetcode.cn/problems/convert-sorted-array-to-binary-search-tree/)
