@@ -1,9 +1,10 @@
 +++
 title = "Raft 算法"
 author = ["Kidddddddd"]
-lastmod = 2025-01-20T13:17:08+08:00
+date = 2025-01-20T13:24:00+08:00
+lastmod = 2025-01-20T13:24:11+08:00
 categories = ["Technolgic"]
-draft = true
+draft = false
 +++
 
 ## Summary {#summary}
