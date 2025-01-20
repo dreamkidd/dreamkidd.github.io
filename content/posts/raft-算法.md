@@ -2,7 +2,8 @@
 title = "Raft 算法"
 author = ["Kidddddddd"]
 date = 2025-01-20T13:24:00+08:00
-lastmod = 2025-01-20T13:24:11+08:00
+lastmod = 2025-01-20T13:24:56+08:00
+tags = ["distribute"]
 categories = ["Technolgic"]
 draft = false
 +++
