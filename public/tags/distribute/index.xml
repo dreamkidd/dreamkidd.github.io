@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Distribute on Kidddddddd 的小窝</title>
-    <link>http://localhost:1313/tags/distribute/</link>
+    <link>https://dreamkidd.github.io/tags/distribute/</link>
     <description>Recent content in Distribute on Kidddddddd 的小窝</description>
     <generator>Hugo</generator>
     <language>zh-CN</language>
     <lastBuildDate>Mon, 20 Jan 2025 15:24:59 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/distribute/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://dreamkidd.github.io/tags/distribute/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Raft 算法</title>
-      <link>http://localhost:1313/posts/raft-%E7%AE%97%E6%B3%95/</link>
+      <link>https://dreamkidd.github.io/posts/raft-%E7%AE%97%E6%B3%95/</link>
       <pubDate>Mon, 20 Jan 2025 13:24:00 +0800</pubDate>
-      <guid>http://localhost:1313/posts/raft-%E7%AE%97%E6%B3%95/</guid>
+      <guid>https://dreamkidd.github.io/posts/raft-%E7%AE%97%E6%B3%95/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;&#xA;&lt;p&gt;主要通过 raft 论文的解读，理解 raft 一致性算法&lt;/p&gt;&#xA;&lt;p&gt;Raft 是一种用来管理日志复制的一致性算法，脱胎于 &lt;strong&gt;Paxos&lt;/strong&gt; 但是比 &lt;strong&gt;Paxos&lt;/strong&gt; 更容易理解&lt;/p&gt;&#xA;&lt;p&gt;将一致性算法细分为了 3 个子问题，并对每个子问题进行了详细提供明确的说明&lt;/p&gt;</description>
     </item>
   </channel>

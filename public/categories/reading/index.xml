@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Reading on Kidddddddd 的小窝</title>
-    <link>http://localhost:1313/categories/reading/</link>
+    <link>https://dreamkidd.github.io/categories/reading/</link>
     <description>Recent content in Reading on Kidddddddd 的小窝</description>
     <generator>Hugo</generator>
     <language>zh-CN</language>
     <lastBuildDate>Thu, 07 Nov 2024 19:51:24 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/reading/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://dreamkidd.github.io/categories/reading/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>读《架构整洁之道》</title>
-      <link>http://localhost:1313/posts/%E8%AF%BB%E6%9E%B6%E6%9E%84%E6%95%B4%E6%B4%81%E4%B9%8B%E9%81%93/</link>
+      <link>https://dreamkidd.github.io/posts/%E8%AF%BB%E6%9E%B6%E6%9E%84%E6%95%B4%E6%B4%81%E4%B9%8B%E9%81%93/</link>
       <pubDate>Thu, 07 Nov 2024 19:50:00 +0800</pubDate>
-      <guid>http://localhost:1313/posts/%E8%AF%BB%E6%9E%B6%E6%9E%84%E6%95%B4%E6%B4%81%E4%B9%8B%E9%81%93/</guid>
+      <guid>https://dreamkidd.github.io/posts/%E8%AF%BB%E6%9E%B6%E6%9E%84%E6%95%B4%E6%B4%81%E4%B9%8B%E9%81%93/</guid>
       <description>&lt;p&gt;因为之前的一些接触，对某些架构师的印象不是很好，纯 ppter，对架构的理解也过于片面，认为也非就是做一些技术选型，画一个好看的ppt 跟老板汇报&lt;/p&gt;</description>
     </item>
   </channel>

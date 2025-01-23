@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Kidddddddd 的小窝</title>
-    <link>http://localhost:1313/categories/</link>
+    <link>https://dreamkidd.github.io/categories/</link>
     <description>Recent content in Categories on Kidddddddd 的小窝</description>
     <generator>Hugo</generator>
     <language>zh-CN</language>
     <lastBuildDate>Fri, 24 Jan 2025 02:48:42 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://dreamkidd.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Algorithm</title>
-      <link>http://localhost:1313/categories/algorithm/</link>
+      <link>https://dreamkidd.github.io/categories/algorithm/</link>
       <pubDate>Fri, 24 Jan 2025 02:48:00 +0800</pubDate>
-      <guid>http://localhost:1313/categories/algorithm/</guid>
+      <guid>https://dreamkidd.github.io/categories/algorithm/</guid>
       <description></description>
     </item>
     <item>
       <title>Technolgic</title>
-      <link>http://localhost:1313/categories/technolgic/</link>
+      <link>https://dreamkidd.github.io/categories/technolgic/</link>
       <pubDate>Mon, 20 Jan 2025 13:24:00 +0800</pubDate>
-      <guid>http://localhost:1313/categories/technolgic/</guid>
+      <guid>https://dreamkidd.github.io/categories/technolgic/</guid>
       <description></description>
     </item>
     <item>
       <title>Reading</title>
-      <link>http://localhost:1313/categories/reading/</link>
+      <link>https://dreamkidd.github.io/categories/reading/</link>
       <pubDate>Thu, 07 Nov 2024 19:50:00 +0800</pubDate>
-      <guid>http://localhost:1313/categories/reading/</guid>
+      <guid>https://dreamkidd.github.io/categories/reading/</guid>
       <description></description>
     </item>
     <item>
       <title>Emacs</title>
-      <link>http://localhost:1313/categories/emacs/</link>
+      <link>https://dreamkidd.github.io/categories/emacs/</link>
       <pubDate>Mon, 19 Feb 2024 12:19:00 +0800</pubDate>
-      <guid>http://localhost:1313/categories/emacs/</guid>
+      <guid>https://dreamkidd.github.io/categories/emacs/</guid>
       <description></description>
     </item>
   </channel>
