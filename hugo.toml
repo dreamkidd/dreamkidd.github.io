@@ -10,7 +10,7 @@ title = 'Kidddddddd 的小窝'
 
 languageName = "简体中文"
 
-theme = 'PaperMod'
+theme = 'LoveIT'
 
 [params]
     comments =  true
@@ -43,7 +43,6 @@ theme = 'PaperMod'
     post = ""
     name = "文章"
     url = "/posts/"
-    # 当你将鼠标悬停在此菜单链接上时, 将显示的标题
     title = ""
   [[menu.main]]
     weight = 2
