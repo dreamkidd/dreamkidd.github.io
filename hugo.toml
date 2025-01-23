@@ -33,11 +33,6 @@ theme = 'PaperMod'
         createIssueManually= true # 设置为true，如果是管理员登录，会自动创建issue，如果是false，需要管理员手动添加第一个评论(issue)
         distractionFreeMode= false # Enable hot key (cmd|ctrl + enter) submit comment.
 
-[author]
-    name = "Kidddddddd"
-    email = "zhangyang911120@outlook.com"
-    link = ""
-
 [menu]
   [[menu.main]]
     weight = 1

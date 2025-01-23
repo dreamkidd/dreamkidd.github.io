@@ -6,8 +6,29 @@
     <description>Recent content in Tags on Kidddddddd 的小窝</description>
     <generator>Hugo</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 12 Oct 2024 17:51:44 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 24 Jan 2025 02:48:42 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Alg@dp</title>
+      <link>http://localhost:1313/tags/alg@dp/</link>
+      <pubDate>Fri, 24 Jan 2025 02:48:00 +0800</pubDate>
+      <guid>http://localhost:1313/tags/alg@dp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Alg@geeedy</title>
+      <link>http://localhost:1313/tags/alg@geeedy/</link>
+      <pubDate>Wed, 22 Jan 2025 02:33:00 +0800</pubDate>
+      <guid>http://localhost:1313/tags/alg@geeedy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Distribute</title>
+      <link>http://localhost:1313/tags/distribute/</link>
+      <pubDate>Mon, 20 Jan 2025 13:24:00 +0800</pubDate>
+      <guid>http://localhost:1313/tags/distribute/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Java</title>
       <link>http://localhost:1313/tags/java/</link>
