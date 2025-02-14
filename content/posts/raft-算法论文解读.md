@@ -1,8 +1,8 @@
 +++
-title = "Raft 算法"
+title = "Raft 算法论文解读"
 author = ["Kidddddddd"]
 date = 2025-01-20T13:24:00+08:00
-lastmod = 2025-01-20T15:24:59+08:00
+lastmod = 2025-02-14T14:01:26+08:00
 tags = ["distribute"]
 categories = ["Technolgic"]
 draft = false
@@ -53,7 +53,7 @@ Raft 的设计目标
 1.  **为构建实际的实现提供良好的基础**
 2.  **可理解**
 
-Raft 为提高课理解性做出的两个方式
+Raft 为提高可理解性做出的两个方式
 
 1.  细分问题
     1.  Leader Election（选主）
