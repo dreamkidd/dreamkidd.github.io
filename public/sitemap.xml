@@ -2,19 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2025-02-16T22:20:02+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/emacs/</loc>
+    <lastmod>2025-02-16T22:20:02+08:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-02-16T14:26:51+08:00</lastmod>
+    <lastmod>2025-02-16T22:20:02+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/ox-hugo-%E9%9B%86%E6%88%90-mermaid/</loc>
+    <lastmod>2025-02-16T22:20:02+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-02-16T14:26:51+08:00</lastmod>
+    <lastmod>2025-02-16T22:20:02+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/kafka%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D%97-%E7%AC%AC2%E7%89%88-%E7%AE%80%E8%AF%84/</loc>
+    <lastmod>2025-02-16T22:10:14+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/reading/</loc>
+    <lastmod>2025-02-16T22:10:14+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/alg@arr/</loc>
     <lastmod>2025-02-16T12:23:02+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/algorithm/</loc>
-    <lastmod>2025-02-16T12:23:02+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/</loc>
     <lastmod>2025-02-16T12:23:02+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
@@ -98,9 +110,6 @@
     <loc>http://localhost:1313/posts/%E4%BB%8E-0-%E6%9E%84%E9%80%A0%E4%B8%80%E4%B8%AA-bst/</loc>
     <lastmod>2024-11-27T16:48:55+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/reading/</loc>
-    <lastmod>2024-11-07T19:51:24+08:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/%E8%AF%BB%E6%9E%B6%E6%9E%84%E6%95%B4%E6%B4%81%E4%B9%8B%E9%81%93/</loc>
     <lastmod>2024-11-07T19:51:24+08:00</lastmod>
   </url><url>
@@ -117,9 +126,6 @@
     <lastmod>2024-10-12T17:49:12+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/emacs/</loc>
-    <lastmod>2024-10-12T17:51:44+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/emacs/</loc>
     <lastmod>2024-10-12T17:51:44+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/hugo/</loc>

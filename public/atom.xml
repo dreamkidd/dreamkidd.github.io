@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">Kidddddddd 的小窝</title>
     <subtitle type="html">MemE is a powerful and highly customizable GoHugo theme for personal blogs.</subtitle>
-    <updated>2025-02-16T14:29:35&#43;08:00</updated>
+    <updated>2025-02-16T22:25:11&#43;08:00</updated>
     <id>http://localhost:1313/</id>
     <link rel="alternate" type="text/html" href="http://localhost:1313/" />
     <link rel="self" type="application/atom&#43;xml" href="http://localhost:1313/atom.xml" />
@@ -17,10 +17,91 @@
     
     <generator uri="https://gohugo.io/" version="0.140.0">Hugo</generator>
         <entry>
+            <title type="text">ox-hugo 集成 mermaid</title>
+            <link rel="alternate" type="text/html" href="http://localhost:1313/posts/ox-hugo-%E9%9B%86%E6%88%90-mermaid/" />
+            <id>http://localhost:1313/posts/ox-hugo-%E9%9B%86%E6%88%90-mermaid/</id>
+            <updated>2025-02-16T22:24:54&#43;08:00</updated>
+            <published>2025-02-16T22:19:00&#43;08:00</published>
+            <author>
+                    <name>dreamkidd</name>
+                    <uri>https://dreamkidd.github.io/</uri>
+                    <email>zhangyang911120@gmail.com</email>
+                    </author>
+            <summary type="html">&lt;h2 id=&#34;memo-主题下的配置&#34;&gt;Memo 主题下的配置&lt;/h2&gt;
+&lt;p&gt;现在的 Blog 主题基于 &lt;a href=&#34;https://io-oi.me/tech/documentation-of-hugo-theme-meme/&#34;&gt;Hugo 主题 MemE 文档 | reuixiy&lt;/a&gt; 来做的，看了下文档，天然的原生支持 Mermaid , 就不用针对 hugo 做太多定制化的东西，需要注意 导出的配置的 &lt;code&gt;Front Matter&lt;/code&gt; 有 &lt;code&gt;mermaid true&lt;/code&gt; 的配置即可&lt;/p&gt;</summary>
+            
+                <content type="html">&lt;h2 id=&#34;memo-主题下的配置&#34;&gt;&lt;a href=&#34;http://localhost:1313/posts/ox-hugo-%E9%9B%86%E6%88%90-mermaid/#memo-主题下的配置&#34; class=&#34;anchor-link&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 512 512&#34; class=&#34;icon anchor-icon&#34;&gt;&lt;path d=&#34;M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;&lt;a href=&#34;http://localhost:1313/posts/ox-hugo-%E9%9B%86%E6%88%90-mermaid/#contents:memo-主题下的配置&#34; class=&#34;headings&#34;&gt;Memo 主题下的配置&lt;/a&gt;&lt;/h2&gt;
+&lt;p style=&#34;text-indent:0&#34;&gt;&lt;span class=&#34;drop-cap&#34;&gt;现&lt;/span&gt;在的 Blog 主题基于 &lt;a href=&#34;https://io-oi.me/tech/documentation-of-hugo-theme-meme/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo 主题 MemE 文档 | reuixiy&lt;/a&gt; 来做的，看了下文档，天然的原生支持 Mermaid , 就不用针对 hugo 做太多定制化的东西，需要注意 导出的配置的 &lt;code&gt;Front Matter&lt;/code&gt; 有 &lt;code&gt;mermaid true&lt;/code&gt; 的配置即可&lt;/p&gt;
+&lt;p&gt;我们用的是 ox-hugo ， 我们需要在自定义 FRONT_MATTER&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;div class=&#34;table-container&#34;&gt;&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-org&#34; data-lang=&#34;org&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :mermaid true
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;其次在 org-bable 中，对 mermaid 进行如下配置&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;div class=&#34;table-container&#34;&gt;&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-org&#34; data-lang=&#34;org&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;#+begin_src mermaid :exports code :results raw :hugo-shortcode mermaid
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;graph TD;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;A--&amp;gt;B;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;A--&amp;gt;C;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;B--&amp;gt;D;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;C--&amp;gt;D;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;示例&#34;&gt;&lt;a href=&#34;http://localhost:1313/posts/ox-hugo-%E9%9B%86%E6%88%90-mermaid/#示例&#34; class=&#34;anchor-link&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 512 512&#34; class=&#34;icon anchor-icon&#34;&gt;&lt;path d=&#34;M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;&lt;a href=&#34;http://localhost:1313/posts/ox-hugo-%E9%9B%86%E6%88%90-mermaid/#contents:示例&#34; class=&#34;headings&#34;&gt;示例&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;如上的配置，就能正常转为 mermaid 图&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-mermaid&#34; data-lang=&#34;mermaid&#34;&gt;graph TD;
+A--&amp;gt;B;
+A--&amp;gt;C;
+B--&amp;gt;D;
+C--&amp;gt;D;
+&lt;/code&gt;&lt;/pre&gt;</content>
+            
+            
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="http://localhost:1313/categories/emacs/" term="emacs" label="emacs" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="http://localhost:1313/tags/hugo/" term="hugo" label="hugo" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        <entry>
             <title type="text">《Kafka权威指南（第2版）》 简评</title>
             <link rel="alternate" type="text/html" href="http://localhost:1313/posts/kafka%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D%97-%E7%AC%AC2%E7%89%88-%E7%AE%80%E8%AF%84/" />
             <id>http://localhost:1313/posts/kafka%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D%97-%E7%AC%AC2%E7%89%88-%E7%AE%80%E8%AF%84/</id>
-            <updated>2025-02-16T14:29:34&#43;08:00</updated>
+            <updated>2025-02-16T22:10:14&#43;08:00</updated>
             <published>2025-02-16T14:27:00&#43;08:00</published>
             <author>
                     <name>dreamkidd</name>
@@ -41,47 +122,12 @@
 &lt;p&gt;把选择权交给用户，这会提高系统设计的复杂难度，相对的，用户使用起来也会相对的困难，需要了解相关的知识也更多，但是这可能恰恰是 Kafka 如此流行的原因，因为其适应性广，这就让 Kafka 走出了一条与其他消息队列不同的路&lt;/p&gt;
 &lt;p&gt;本书没有特别深入到很底层的实现，而是从设置，使用层面，来简单的介绍了我们使用 Kafaka 中，在不同场景下，需要进行的一些配置，需要做的一些实现以及一些比较好的实践方式。&lt;/p&gt;
 &lt;p&gt;所以如果对特别底层感兴趣的话，这本书并不适合，市面上也没有找到特别符合的书，可能之间看源码更合适一些&lt;/p&gt;
-&lt;h2 id=&#34;概要&#34;&gt;&lt;a href=&#34;http://localhost:1313/posts/kafka%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D%97-%E7%AC%AC2%E7%89%88-%E7%AE%80%E8%AF%84/#概要&#34; class=&#34;anchor-link&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 512 512&#34; class=&#34;icon anchor-icon&#34;&gt;&lt;path d=&#34;M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;&lt;a href=&#34;http://localhost:1313/posts/kafka%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D%97-%E7%AC%AC2%E7%89%88-%E7%AE%80%E8%AF%84/#contents:概要&#34; class=&#34;headings&#34;&gt;概要&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Kafka 的基本架构&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-mermaid&#34; data-lang=&#34;mermaid&#34;&gt;graph LR
-    %% 定义节点样式
-    classDef leader fill:#f9f,stroke:#333,stroke-width:2px,stroke-dasharray: 5 5;
-    classDef follower fill:#ccf,stroke:#333,stroke-width:2px;
-    classDef producerConsumer fill:#ffdead,stroke:#333,stroke-width:2px;
-    classDef brokerTitle fill:#e0e0e0,stroke:#333,stroke-width:1px,stroke-dasharray: 2 2;
-
-    %% 左侧：生产者节点
-    生产者[&amp;#34;生产者&amp;#34;]:::producerConsumer
-
-    %% 中间：Kafka 集群子图，内部使用横向布局将 Broker 1 与 Broker 2 并列显示
-    subgraph Kafka集群
-        direction LR
-        %% Broker 1 子图：内部自上而下排列
-        subgraph &amp;#34;Broker 1&amp;#34;
-            direction TB
-            A0L[&amp;#34;主题 A0 分区 (首领)&amp;#34;]:::leader
-            A1R[&amp;#34;主题 A1 分区&amp;#34;]:::follower
-        end
-        %% Broker 2 子图：内部自上而下排列
-        subgraph &amp;#34;Broker 2&amp;#34;
-            direction TB
-            A0R[&amp;#34;主题 A0 分区&amp;#34;]:::follower
-            A1L[&amp;#34;主题 A1 分区 (首领)&amp;#34;]:::leader
-        end
-    end
-
-    %% 右侧：消费者节点
-    消费者[&amp;#34;消费者&amp;#34;]:::producerConsumer
-
-    %% 边的连接
-    生产者 --&amp;gt;|消息 A0| A0L
-    生产者 --&amp;gt;|消息 A1| A1L
-
-    A0L --&amp;gt;|复制 A0| A0R
-    A1L --&amp;gt;|复制 A1| A1R
-
-    A0L --&amp;gt;|来自 A0 的消息| 消费者
-    A1L --&amp;gt;|来自 A1 的消息| 消费者
+&lt;h2 id=&#34;demo&#34;&gt;&lt;a href=&#34;http://localhost:1313/posts/kafka%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D%97-%E7%AC%AC2%E7%89%88-%E7%AE%80%E8%AF%84/#demo&#34; class=&#34;anchor-link&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 512 512&#34; class=&#34;icon anchor-icon&#34;&gt;&lt;path d=&#34;M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;&lt;a href=&#34;http://localhost:1313/posts/kafka%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D%97-%E7%AC%AC2%E7%89%88-%E7%AE%80%E8%AF%84/#contents:demo&#34; class=&#34;headings&#34;&gt;DEMO&lt;/a&gt;&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-mermaid&#34; data-lang=&#34;mermaid&#34;&gt;graph TD;
+A--&amp;gt;B;
+A--&amp;gt;C;
+B--&amp;gt;D;
+C--&amp;gt;D;
 &lt;/code&gt;&lt;/pre&gt;</content>
             
             
@@ -4300,7 +4346,7 @@ Runtime&lt;/p&gt;
             <title type="text">利用 emacs &#43; hugo 搭建个人博客</title>
             <link rel="alternate" type="text/html" href="http://localhost:1313/posts/%E5%88%A9%E7%94%A8-emacs-&#43;-hugo-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" />
             <id>http://localhost:1313/posts/%E5%88%A9%E7%94%A8-emacs-&#43;-hugo-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</id>
-            <updated>2024-10-12T17:51:44&#43;08:00</updated>
+            <updated>2025-02-16T22:25:11&#43;08:00</updated>
             <published>2024-02-19T12:19:00&#43;08:00</published>
             <author>
                     <name>dreamkidd</name>
@@ -4677,7 +4723,9 @@ Press Ctrl+C to stop&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;在仓库的 &lt;strong&gt;Settings -&amp;gt; Pages&lt;/strong&gt; 里修改 Build and Deployment 的 &lt;strong&gt;Source&lt;/strong&gt; 修改为 GitHub Actions&lt;/p&gt;
-&lt;p&gt;&amp;lt;_20240219_174337screenshot.png&amp;gt;&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/c8/70562f-2b52-4960-a4e8-caefa0cfa9e7/_20240219_174337screenshot.png&#34;&gt;
+    &lt;/figure&gt;
+
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;在本地的 hugo 代码库操作&lt;/p&gt;
@@ -4870,7 +4918,9 @@ Press Ctrl+C to stop&lt;/p&gt;
 &lt;p&gt;在 repo 的 Actions 里查看 workflow 的结果是否正常&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&amp;lt;_20240219_174300screenshot.png&amp;gt;&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/c8/70562f-2b52-4960-a4e8-caefa0cfa9e7/_20240219_174300screenshot.png&#34;&gt;
+&lt;/figure&gt;
+
 &lt;ol&gt;
 &lt;li&gt;以后每次提交，会自动进行构建发布&lt;/li&gt;
 &lt;/ol&gt;
@@ -4892,21 +4942,9 @@ Press Ctrl+C to stop&lt;/p&gt;
                                 <category scheme="http://localhost:1313/categories/emacs/" term="emacs" label="emacs" />
                             
                         
-                            
-                            
-                            
-                                <category scheme="http://localhost:1313/categories/technolgic/" term="technolgic" label="technolgic" />
-                            
-                        
                     
                 
                     
-                        
-                            
-                            
-                            
-                                <category scheme="http://localhost:1313/tags/emacs/" term="emacs" label="emacs" />
-                            
                         
                             
                             
