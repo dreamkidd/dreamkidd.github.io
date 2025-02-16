@@ -2,9 +2,9 @@
 title = "利用 emacs + hugo 搭建个人博客"
 author = ["Kidddddddd"]
 date = 2024-02-19T12:19:00+08:00
-lastmod = 2024-10-12T17:51:44+08:00
-tags = ["emacs", "hugo"]
-categories = ["emacs", "technolgic"]
+lastmod = 2025-02-16T22:27:09+08:00
+tags = ["hugo"]
+categories = ["emacs"]
 draft = false
 +++
 
@@ -290,7 +290,7 @@ theme = 'LoveIt'
 
 1.  在仓库的 **Settings -&gt; Pages** 里修改 Build and Deployment 的 **Source** 修改为 GitHub Actions
 
-    <_20240219_174337screenshot.png>
+    {{< figure src="/c8/70562f-2b52-4960-a4e8-caefa0cfa9e7/_20240219_174337screenshot.png" >}}
 
 2.  在本地的 hugo 代码库操作
     ```bash
@@ -390,7 +390,7 @@ jobs:
 
 2.  在 repo 的 Actions 里查看 workflow 的结果是否正常
 
-<_20240219_174300screenshot.png>
+{{< figure src="/c8/70562f-2b52-4960-a4e8-caefa0cfa9e7/_20240219_174300screenshot.png" >}}
 
 1.  以后每次提交，会自动进行构建发布
 
