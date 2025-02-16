@@ -2,9 +2,9 @@
 title = "JVM C1 C2 占用 CPU 问题排查"
 author = ["Kidddddddd"]
 date = 2024-02-28T15:41:00+08:00
-lastmod = 2024-10-12T17:49:12+08:00
+lastmod = 2025-02-16T22:28:52+08:00
 tags = ["java", "jvm"]
-categories = ["Technolgic", "technolgic"]
+categories = ["Technolgic"]
 draft = false
 +++
 
@@ -30,7 +30,7 @@ draft = false
 
 先用 `top -Hp pid` 查看线程信息
 
-<_20240227_194922screenshot.png>
+{{< figure src="/51/41c5d6-ae06-420f-8288-9ad5ad31a8c0/_20240227_194922screenshot.png" >}}
 
 ```bash
 > printf "%x\n" 72
@@ -87,7 +87,8 @@ C2 是 JVM 用来进行 JIT 编译的线程，其过程是把 `byteCode` 编译�
 
 ### 其他 {#其他}
 
-预热等方案，但是与我遇到的实际情况不符还有一个利用 GBD 排查的，但是只是一个排查过程，可以给到一个启发思路，但是没有最终解决问题
+预热等方案，但是与我遇到的实际情况不符
+还有一个利用 GBD 排查的，但是只是一个排查过程，可以给到一个启发思路，但是没有最终解决问题
 
 
 ## 解决 {#解决}
