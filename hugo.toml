@@ -9,7 +9,7 @@ languageCode = "zh-CN"
 hasCJKLanguage = true
 title = 'Kidddddddd 的小窝'
 # Copyright information (Markdown supported)
-# copyright = "[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)"
+copyright = 'This work is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
 
 # Name of theme
 theme = "meme"
@@ -1526,3 +1526,10 @@ uglyURLs = false
         # twitter = "reuixiy"
         # Fediverse
         # fediverse = "@reuixiy@bird.makeup"
+# hugo mode
+#
+[module]
+  [[module.imports]]
+    path = "github.com/KKKZOZ/hugo-admonitions"
+  [[module.imports]]
+    path = "hugo-admonitions"
