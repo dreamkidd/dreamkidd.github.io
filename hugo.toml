@@ -9,7 +9,7 @@ languageCode = "zh-CN"
 hasCJKLanguage = true
 title = 'Kidddddddd 的小窝'
 # Copyright information (Markdown supported)
-# copyright = "[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)"
+copyright = "©2025 Kidddddddd. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1)"
 
 # Name of theme
 theme = "meme"
@@ -32,7 +32,7 @@ pluralizeListTitles = false
 summaryLength = 42
 
 # Enable Emoji emoticons support?
-enableEmoji = false
+enableEmoji = true
 
 # Text to display for footnote return links
 footnoteReturnLinkContents = "↩"
@@ -67,7 +67,7 @@ uglyURLs = false
     # Number of items per page in paginated
     # lists (valid for the `posts` homepage
     # layout in MemE)
-    pagerSize = 5
+    pagerSize = 10
     path = 'page'
 
 # Markdown renderer
@@ -1526,3 +1526,12 @@ uglyURLs = false
         # twitter = "reuixiy"
         # Fediverse
         # fediverse = "@reuixiy@bird.makeup"
+
+
+# Hugo module REQUIRED `hugo version > v0.140`
+[module]
+  [[module.imports]]
+    path = "github.com/KKKZOZ/hugo-admonitions"
+  [[module.imports]]
+    path = "hugo-admonitions"
+
