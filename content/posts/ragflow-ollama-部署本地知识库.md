@@ -1,11 +1,11 @@
-+++
-title = "RAGFlow ollama 部署本地知识库"
-author = ["Kidddddddd"]
-date = 2025-04-14T13:10:00+08:00
-lastmod = 2025-04-14T13:18:01+08:00
-categories = ["Technolgic"]
-draft = false
-+++
+---
+title: RAGFlow ollama 部署本地知识库
+author: ["Kidddddddd"]
+date: 2025-04-14T13:10:00+08:00
+lastmod: 2025-04-14T13:18:01+08:00
+categories: ["Technolgic"]
+draft: false
+---
 
 ## Ollama 部署本地大模型 {#ollama-部署本地大模型}
 
@@ -23,11 +23,9 @@ Ollama 的优势
 
 `brew install ollama --cask`
 
-
 ## 部署 Deepseek-R1 {#部署-deepseek-r1}
 
 `ollama run deepseek-r1:32b`
-
 
 ## 部署 RAGFLOW {#部署-ragflow}
 
@@ -62,7 +60,6 @@ docker build -f Dockerfile -t infiniflow/ragflow:nightly .
           docker compose -f docker-compose-macos.yml up -d
     ```
 4.  构建完成以后，可以访问 `127.0.0.1:80` 来运行 RAGFlow
-
 
 ## 配置 RAGFlow <span class="tag"><span class="ATTACH">ATTACH</span></span> {#配置-ragflow}
 
