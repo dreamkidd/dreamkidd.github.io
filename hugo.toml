@@ -743,7 +743,7 @@ giscusEmitMetaData = false
 giscusInputPosition = "bottom"
 giscusTheme = "preferred_color_scheme"
 giscusThemeDark = "preferred_color_scheme"
-giscusLang = "zh-cn"
+giscusLang = "zh-CN"
 # Note: https://giscus.app
 
 # Remark42
