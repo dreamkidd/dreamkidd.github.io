@@ -38,7 +38,7 @@ enableEmoji = false
 footnoteReturnLinkContents = "↩"
 
 # Enable `.GitInfo` object for each page?
-enableGitInfo = false
+enableGitInfo = true
 
 # Enable generation of `robots.txt` file?
 enableRobotsTXT = true
@@ -646,13 +646,13 @@ mermaidThemeDark = 'dark'
 # Note: render only in production
 #       environment
 
-enableComments = false
+enableComments = true
 # Note: *global settings*
 #       `comments` in post’s Front Matter
 #       has a higher priority than here
 
 # directly load the comments after pages loaded
-autoLoadComments = false
+autoLoadComments = true
 
 ## Disqus
 enableDisqus = false
@@ -731,19 +731,19 @@ gitalkEnableHotKey = true
 # Note: https://github.com/gitalk/gitalk
 
 ## Giscus
-enableGiscus = false
-giscusRepo = "[ENTER repo/you/want HERE]"
-giscusRepoId = "[ENTER REPO ID HERE]"
-giscusCategory = "[ENTER CATEGORY NAME HERE]"
-giscusCategoryId = "[ENTER CATEGORY ID HERE]"
+enableGiscus = true
+giscusRepo = "dreamkidd/dreamkidd.github.io/"
+giscusRepoId = "R_kgDOLUbsWQ"
+giscusCategory = "General"
+giscusCategoryId = "DIC_kwDOLUbsWc4Cp0eV"
 giscusMapping = "pathname"
 giscusStrict = false
 giscusReactionsEnabled = true
 giscusEmitMetaData = false
-giscusInputPosition = "top"
-giscusTheme = "light"
-giscusThemeDark = "dark"
-giscusLang = "en"
+giscusInputPosition = "bottom"
+giscusTheme = "preferred_color_scheme"
+giscusThemeDark = "preferred_color_scheme"
+giscusLang = "zh-cn"
 # Note: https://giscus.app
 
 # Remark42
