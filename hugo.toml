@@ -732,7 +732,7 @@ gitalkEnableHotKey = true
 
 ## Giscus
 enableGiscus = true
-giscusRepo = "dreamkidd/dreamkidd.github.io/"
+giscusRepo = "dreamkidd/dreamkidd.github.io"
 giscusRepoId = "R_kgDOLUbsWQ"
 giscusCategory = "General"
 giscusCategoryId = "DIC_kwDOLUbsWc4Cp0eV"
