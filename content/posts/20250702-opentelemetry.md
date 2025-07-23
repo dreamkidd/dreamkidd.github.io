@@ -65,8 +65,8 @@ graph TD
         D -->|"创建"| E["MaskingExporter"]
         E -->|"包装"| F["原始 LogRecordExporter"]
         C -->|"使用"| E
-        E -->|"1. 脱敏处理"| G["脱敏后的日志"]
-        G -->|"2. 调用原始 Exporter"| F
+        E -->|"1-脱敏处理"| G["脱敏后的日志"]
+        G -->|"2-调用原始 Exporter"| F
     end
 
     subgraph "外部系统"
