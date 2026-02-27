@@ -1,5 +1,5 @@
 ---
-title: "日常踩坑复盘：如何正确使用 oh-my-claude 与底层抽象的痛"
+title: "关于 AI 的碎碎念"
 date: 2026-02-27T15:00:00Z
 draft: false
 tags: ["AI", "Architecture", "Engineering", "Oh-My-Claude"]
