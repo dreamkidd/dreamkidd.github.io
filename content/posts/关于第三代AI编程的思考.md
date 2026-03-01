@@ -1,6 +1,6 @@
 ---
 title: "关于第三代 AI 编程的思考：全自动 Agent 的真实成本与人才断层危机"
-date: 2026-03-01T15:30:00+08:00
+date: 2026-03-01T14:00:00+08:00
 lastmod: 2026-03-01T15:30:00+08:00
 description: "探讨第三代 AI 编程工具（如 OpenClaw）在真实开发中的业务体感。实算 AI Agent 与人工成本，剖析全自动编程的 Token 算力消耗、兜底成本，以及 AI 普及下初级程序员的生存困境与行业人才断层隐患。"
 keywords: ["第三代 AI 编程", "AI Agent 成本", "OpenClaw", "自动化编程", "程序员人才断层", "软件开发已死", "大模型 API 费用", "Claude Max", "Gemini Pro", "Cursor"]
