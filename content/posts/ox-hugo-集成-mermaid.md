@@ -4,7 +4,7 @@ author = ["Kidddddddd"]
 date = 2025-02-16T22:19:00+08:00
 lastmod = 2025-02-16T22:24:54+08:00
 tags = ["hugo"]
-categories = ["emacs"]
+categories = ["Tech"]
 draft = false
 mermaid = true
 +++

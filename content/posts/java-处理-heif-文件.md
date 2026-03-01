@@ -3,7 +3,7 @@ title = "Java 处理 heif 文件"
 author = ["Kidddddddd"]
 lastmod = 2024-10-12T17:49:36+08:00
 tags = ["java"]
-categories = ["Technolgic"]
+categories = ["Tech"]
 draft = false
 +++
 

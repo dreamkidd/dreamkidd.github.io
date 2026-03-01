@@ -3,8 +3,8 @@ title = "Raft 算法论文解读"
 author = ["Kidddddddd"]
 date = 2025-01-20T13:24:00+08:00
 lastmod = 2025-02-14T14:01:26+08:00
-tags = ["distribute"]
-categories = ["Technolgic"]
+tags = ["distributed-system"]
+categories = ["Tech"]
 draft = false
 +++
 

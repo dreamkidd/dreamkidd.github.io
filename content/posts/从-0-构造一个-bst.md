@@ -2,6 +2,7 @@
 title = "从 0 构造一个 BST"
 author = ["Kidddddddd"]
 lastmod = 2024-11-27T16:48:55+08:00
+tags = ["leetcode"]
 categories = ["Algorithm"]
 draft = false
 +++

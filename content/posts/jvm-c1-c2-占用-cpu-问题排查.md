@@ -4,7 +4,7 @@ author = ["Kidddddddd"]
 date = 2024-02-28T15:41:00+08:00
 lastmod = 2025-02-16T22:28:52+08:00
 tags = ["java", "jvm"]
-categories = ["Technolgic"]
+categories = ["Tech"]
 draft = false
 +++
 

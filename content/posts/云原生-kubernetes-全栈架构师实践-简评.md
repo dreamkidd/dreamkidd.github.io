@@ -3,6 +3,7 @@ title = "《云原生 Kubernetes 全栈架构师实践》简评"
 author = ["Kidddddddd"]
 date = 2025-03-12T21:46:00+08:00
 lastmod = 2025-03-12T21:48:26+08:00
+tags = ["book-review"]
 categories = ["Reading"]
 draft = false
 +++

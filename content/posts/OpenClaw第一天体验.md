@@ -3,7 +3,7 @@ title = "初探 OpenClaw：全能 AI 助理的第一天"
 author = ["Kidddddddd"]
 date = 2026-02-25T16:50:00+08:00
 lastmod = 2026-02-25T19:05:00+08:00
-categories = ["Tech", "AI"]
+categories = ["AI"]
 draft = false
 +++
 
